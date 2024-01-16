@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Your Webpage Title</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        img {
-            width: 60%;
-            margin: 20px 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <p>dawning of the day</p>
-    <img src="killmeDud.jpg" alt="Image Description">
+
+    <!-- 1. Text "dawning of the day" in lowercase, in the center of the page -->
+    <div>
+        <p style="text-transform: lowercase; font-size: 24px;">dawning of the day</p>
+    </div>
+
+    <!-- 2. Image "killmeDud.jpg" with width set at 60%, in the center of the page -->
+    <div>
+        <img src="killmeDud.jpg" alt="Image" style="width: 60%; display: block; margin: 0 auto;">
+    </div>
+
+    <!-- 3. 20 pixels of empty space -->
     <div style="margin-top: 20px;"></div>
-    <audio controls>
-        <source src="nude.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+
+    <!-- 4. Audio controls for "nude.mp3", in the center of the page -->
+    <div>
+        <audio controls style="width: 60%; display: block; margin: 0 auto;">
+            <source src="nude.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- 5. 20 pixels of empty space -->
     <div style="margin-top: 20px;"></div>
+
 </body>
 </html>
+
