@@ -35,6 +35,14 @@
         p {
             font-weight: bold;
         }
+
+        audio {
+            margin-top: 20px; /* Add some top margin to the audio controls */
+        }
+
+        button {
+            margin-top: 20px; /* Add some top margin to the button */
+        }
     </style>
     <!-- Add any additional meta tags, styles, or scripts here -->
 </head>
@@ -47,13 +55,20 @@
 
     <main>
         <p style="font-weight: bold;">dawning of the day</p>
-        <br>
         <img src="killmeDud.jpg" alt="Dawning Image">
         <audio controls>
             <source src="nude.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <button onclick="playAudio()">Play Audio</button>
     </main>
+
+    <script>
+        function playAudio() {
+            var audio = document.querySelector('audio');
+            audio.play();
+        }
+    </script>
 </body>
 
 </html>
