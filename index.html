@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Your Website Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        img {
+            width: 60%;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- 1. Text "dawning of the day" in lowercase -->
     <p>dawning of the day</p>
-
-    <!-- 2. Image "killmeDud.jpg" with width set at 60% -->
-    <img src="killmeDud.jpg" alt="Kill Me Dude" style="width: 60%;">
-
-    <!-- 3. Audio controls for "nude.mp3" -->
+    <img src="killmeDud.jpg" alt="Image Description">
+    <div style="margin-top: 20px;"></div>
     <audio controls>
         <source src="nude.mp3" type="audio/mp3">
-        Your browser does not support the audio tag.
+        Your browser does not support the audio element.
     </audio>
-
-    <!-- 4. 20 pixels of empty space -->
-    <div style="height: 20px;"></div>
-
+    <div style="margin-top: 20px;"></div>
 </body>
 </html>
