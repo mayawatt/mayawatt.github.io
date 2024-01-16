@@ -17,6 +17,7 @@
 
         header {
             text-align: center;
+            margin-bottom: 20px; /* Add margin to the bottom of the header */
         }
 
         main {
@@ -39,10 +40,6 @@
         audio {
             margin-top: 20px; /* Add some top margin to the audio controls */
         }
-
-        button {
-            margin-top: 20px; /* Add some top margin to the button */
-        }
     </style>
     <!-- Add any additional meta tags, styles, or scripts here -->
 </head>
@@ -60,15 +57,7 @@
             <source src="nude.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <button onclick="playAudio()">Play Audio</button>
     </main>
-
-    <script>
-        function playAudio() {
-            var audio = document.querySelector('audio');
-            audio.play();
-        }
-    </script>
 </body>
 
 </html>
