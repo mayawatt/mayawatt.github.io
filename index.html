@@ -21,6 +21,7 @@
 
         main {
             max-width: 600px; /* Adjust the maximum width as needed */
+            text-align: center;
         }
 
         img {
@@ -29,6 +30,14 @@
             display: block;
             margin: auto; /* Center the image horizontally */
             margin-top: 20px; /* Add some top margin */
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 20px; /* Add top margin to the button */
         }
     </style>
     <!-- Add any additional meta tags, styles, or scripts here -->
@@ -41,8 +50,18 @@
     </header>
 
     <main>
+        <p>dawning of the day</p>
         <img src="killmeDud.jpg" alt="Dawning Image">
+        <button onclick="playAudio()">Play Audio</button>
+        <audio id="audio" src="nude.mp3" preload="auto"></audio>
     </main>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+    </script>
 </body>
 
 </html>
