@@ -29,6 +29,7 @@
 <body>
     <img src="attempt_4.gif">
     <button onclick="playMusic()">play audio</button>
+    <button onclick="pauseMusic()">pause audio</button>
     
     <audio id="audio" src="miss_the_rage.mp3"></audio>
 
@@ -36,6 +37,10 @@
         function playMusic() {
             var audio = document.getElementById('audio');
             audio.play();
+        }
+        function pauseMusic() {
+            var audio = document.getElementById('audio');
+            audio.pause();
         }
     </script>
 </body>
